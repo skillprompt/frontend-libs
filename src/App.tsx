@@ -3,6 +3,7 @@ import { useForm, type SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LearnReactQuery } from "./LearnReactQuery";
+import { Todo } from "./zustand/Todo";
 // type LoginFormType = {
 //   email: string;
 //   password: string;
@@ -82,6 +83,7 @@ function App() {
         <button>Submit</button>
       </form>
 
+      <Todo />
       <LearnReactQuery />
     </div>
   );
